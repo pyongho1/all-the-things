@@ -72,6 +72,22 @@ const App = () => {
     },
   ]
 
+  const yongsThings = [
+    {
+      name: "water",
+      image: "https://imgs.xkcd.com/comics/water.png",  
+      attributes: ["healthy", "hydrating", "good"],
+    },
+  ]
+
+  const kianasThings = [
+    {
+      name: "video games",
+      image: "https://imgs.xkcd.com/comics/videogames.png",  
+      attributes: ["entertaining", "addicting", "time-wasting"],
+    },
+  ]
+
   return (
     <Routes>
       {/* All the <Route> components should live here */}
@@ -91,6 +107,14 @@ const App = () => {
       <Route
         path="/the-energy-things"
         element={<EnergyThings things={iansThings} />}
+      />
+      <Route
+        path="/the-yong-things"
+        element={<EnergyThings things={yongsThings} />}
+      />
+      <Route
+        path="/the-kiana-things"
+        element={<EnergyThings things={kianasThings} />}
       />
     </Routes>
   )
